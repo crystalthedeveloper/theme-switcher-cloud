@@ -1,0 +1,9 @@
+{
+  "name": "Theme Switcher Cloud",
+  "slug": "theme-switcher-cloud",
+  "version": "1.0.0",
+  "engine": "0.2.0",
+  "clientId": "54a06798c0f6f8959eea506f62c95a29f3c86443e291a2a643a36fdb54b87633",
+  "source": "theme-switcher.js",
+  "publicDir": "."
+}
