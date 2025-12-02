@@ -1,0 +1,17 @@
+{
+  "$schema": "https://cloud.webflow.com/schema/config/v1.json",
+  "name": "theme-switcher-cloud",
+  "description": "Publishes the Theme Switcher script to Webflow Cloud object storage.",
+  "objects": [
+    {
+      "path": "/theme-switcher.js",
+      "source": "./theme-switcher.js",
+      "contentType": "application/javascript; charset=utf-8",
+      "cacheControl": {
+        "public": true,
+        "maxAge": 31536000,
+        "immutable": true
+      }
+    }
+  ]
+}
