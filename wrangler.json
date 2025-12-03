@@ -1,9 +1,0 @@
-{
-  "r2_buckets": [
-    {
-      "binding": "R2",
-      "bucket_name": "theme-switcher-cloud",
-      "bucket_id": "theme-switcher-cloud"
-    }
-  ]
-}
