@@ -1,9 +1,11 @@
 {
   "name": "theme-switcher-cloud",
-  "cosmic": {
-    "framework": "none",
-    "entry": "theme-switcher.js",
-    "objectStorage": true,
-    "routes": false
-  }
+  "cosmic": [
+    {
+      "framework": "object-storage",
+      "entry": "theme-switcher.js",
+      "objectStorage": true,
+      "routes": false
+    }
+  ]
 }
