@@ -5,7 +5,7 @@
  * Supports toggle button, direct theme buttons, custom text, background, link, icon, and image styles.
  *
  * ✅ HOW TO USE — Custom Attributes (cltd-prefixed for uniqueness):
- * ----------------------------------------------------------------
+ * ---------------------------------------------------------------
  * [data-cltd-theme-toggle]        → Toggle button
  * [data-cltd-set-theme="dark"]   → Directly switch to dark theme
  * [data-cltd-set-theme="light"]  → Directly switch to light theme
