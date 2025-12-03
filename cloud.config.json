@@ -2,6 +2,10 @@
   "$schema": "https://cloud.webflow.com/schema/config/v1.json",
   "name": "theme-switcher-cloud",
   "description": "Publishes the Theme Switcher script to Webflow Cloud object storage.",
+  "build": {
+    "command": "",
+    "output": "."
+  },
   "objects": [
     {
       "path": "/theme-switcher.js",
