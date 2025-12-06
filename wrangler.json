@@ -2,12 +2,14 @@
   "name": "theme-switcher-cloud",
   "main": "src/function/worker.js",
   "compatibility_date": "2024-01-01",
+
   "assets": {
     "binding": "R2",
     "directory": "./",
     "serve": true,
-    "base_path": "/assets"
+    "base_path": "/_cloud/r2"
   },
+
   "r2_buckets": [
     {
       "binding": "R2",
