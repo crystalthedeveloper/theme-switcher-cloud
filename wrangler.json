@@ -2,6 +2,11 @@
   "name": "theme-switcher-cloud",
   "main": "src/function/worker.js",
   "compatibility_date": "2024-01-01",
+  "assets": {
+    "binding": "R2",
+    "directory": "./",
+    "serve": true
+  },
   "r2_buckets": [
     {
       "binding": "R2",
