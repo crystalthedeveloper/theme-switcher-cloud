@@ -1,7 +1,8 @@
 {
   "name": "theme-switcher-cloud",
   "cloud": {
-    "framework": "astro"
+    "framework": "astro",
+    "project_id": "85bbae6e-adb5-4fb2-b1d6-af8debb30a20"
   },
   "cosmic": {
     "framework": "none",
@@ -13,5 +14,12 @@
       "pattern": "/theme-switcher.js",
       "script": "theme-switcher-cloud"
     }
-  ]
+  ],
+  "telemetry": {
+    "global": {
+      "allowTelemetry": true,
+      "lastPrompted": 1765055447691,
+      "version": "1.8.51"
+    }
+  }
 }
