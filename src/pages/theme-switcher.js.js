@@ -1,16 +1,9 @@
-import { readFileSync } from "node:fs";
-import { fileURLToPath } from "node:url";
+import themeSwitcherSource from "../../theme-switcher.js?raw";
 
 export const prerender = true;
 
-const scriptPath = fileURLToPath(new URL("../../theme-switcher.js", import.meta.url));
-
-function loadScript() {
-  return readFileSync(scriptPath, "utf-8");
-}
-
 export function GET() {
-  const body = loadScript();
+  const body = themeSwitcherSource;
 
   return new Response(body, {
     headers: {
