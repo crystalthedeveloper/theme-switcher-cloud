@@ -6,8 +6,7 @@
   "assets": {
     "binding": "R2",
     "directory": "./",
-    "serve": true,
-    "base_path": "/_cloud/r2"
+    "serve": true
   },
 
   "r2_buckets": [
@@ -15,6 +14,13 @@
       "binding": "R2",
       "bucket_name": "my-bucket",
       "bucket_id": "123456789"
+    }
+  ],
+
+  "routes": [
+    {
+      "pattern": "*/_cloud/r2/*",
+      "script": "theme-switcher-cloud"
     }
   ]
 }
