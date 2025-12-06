@@ -5,7 +5,8 @@
   "assets": {
     "binding": "R2",
     "directory": "./",
-    "serve": true
+    "serve": true,
+    "base_path": "/assets"
   },
   "r2_buckets": [
     {
