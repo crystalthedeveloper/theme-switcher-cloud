@@ -14,6 +14,6 @@ export default {
       });
     }
 
-    return env.Astro.fetch(request);
+    return new Response("OK");
   }
 };

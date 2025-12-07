@@ -1,8 +1,7 @@
 {
   "name": "theme-switcher-cloud",
   "cloud": {
-    "framework": "astro",
-    "project_id": "85bbae6e-adb5-4fb2-b1d6-af8debb30a20",
+    "framework": "none",
     "mountPath": "/"
   },
   "cosmic": {
