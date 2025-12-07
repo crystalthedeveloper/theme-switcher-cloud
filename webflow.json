@@ -1,7 +1,7 @@
 {
   "name": "theme-switcher-cloud",
   "cloud": {
-    "framework": "none",
+    "framework": "astro",
     "mountPath": "/"
   },
   "cosmic": {
