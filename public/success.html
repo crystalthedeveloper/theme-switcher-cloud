@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <base href="/theme-switcher/" />
+    <title>Theme Switcher Installed</title>
+    <style>
+      :root {
+        font-family: "Inter", "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+        color: #060606;
+        background: #fafafa;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2.5rem;
+        background: linear-gradient(135deg, #ffffff, #f3f3f3 40%, #ffffff 100%);
+      }
+
+      main {
+        max-width: 40rem;
+        width: 100%;
+        border-radius: 1.5rem;
+        padding: 3rem;
+        background: rgba(255, 255, 255, 0.95);
+        border: 1px solid rgba(6, 6, 6, 0.08);
+        box-shadow:
+          0 25px 70px rgba(0, 0, 0, 0.08),
+          inset 0 1px 0 rgba(255, 255, 255, 0.9);
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0 0 1rem;
+        font-size: 2.4rem;
+        letter-spacing: -0.03em;
+      }
+
+      p {
+        color: #1f1f1f;
+        margin-bottom: 1.6rem;
+        line-height: 1.7;
+        font-size: 1.05rem;
+      }
+
+      strong {
+        color: #050505;
+      }
+
+      .note {
+        margin-bottom: 0;
+        color: #4a4a4a;
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Theme Switcher Installed Successfully 🎉</h1>
+      <p>
+        The light and dark theme script is now injected into your site’s global custom code, so every
+        published page loads the Theme Switcher automatically.
+      </p>
+      <p>
+        Open the Webflow Designer to start adding the provided <code>data-cltd-*</code> attributes to
+        toggles, buttons, images, and icons. Publish your site whenever you want those updates to go
+        live—if you don’t see changes right away, a fresh publish usually does the trick.
+      </p>
+      <p class="note">You can safely close this window and head back to Webflow to continue designing.</p>
+    </main>
+  </body>
+</html>
