@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <base href="/theme-switcher/" />
+    <title>Installing Theme Switcher…</title>
+    <style>
+      :root {
+        font-family: "Inter", "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+        color: #060606;
+        background: #fafafa;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2.5rem;
+        background: linear-gradient(135deg, #ffffff, #f3f3f3 40%, #ffffff 100%);
+        color: inherit;
+      }
+
+      main {
+        max-width: 38rem;
+        width: 100%;
+        border-radius: 1.5rem;
+        padding: 3rem;
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid rgba(6, 6, 6, 0.08);
+        box-shadow:
+          0 25px 70px rgba(0, 0, 0, 0.08),
+          inset 0 1px 0 rgba(255, 255, 255, 0.9);
+        text-align: center;
+      }
+
+      h1 {
+        margin-top: 0;
+        font-size: 2.25rem;
+        letter-spacing: -0.03em;
+        color: #050505;
+      }
+
+      p {
+        color: #1f1f1f;
+        margin-bottom: 1.5rem;
+        line-height: 1.7;
+        font-size: 1.05rem;
+      }
+
+      [data-status] {
+        margin-bottom: 0;
+        color: #4a4a4a;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Installing Theme Switcher…</h1>
+      <p>
+        Theme Switcher now injects its hosted script into your site automatically using Webflow’s Custom
+        Code API. Once Webflow completes the install, the Data Client securely adds the script to your
+        site’s global `</body>` custom code so every published page loads the theme toggle with no
+        manual copy/paste.
+      </p>
+      <p data-status>
+        Waiting for Webflow to finish the install. Please launch Theme Switcher from the Webflow Apps
+        interface if you aren't redirected automatically.
+      </p>
+    </main>
+
+    <script type="module">
+      const STATUS = document.querySelector("[data-status]");
+      const params = new URLSearchParams(window.location.search);
+      const code = params.get("code");
+      const siteId = params.get("site_id") ?? params.get("siteId");
+      const state = params.get("state");
+
+      if (!code && !siteId && !state) {
+        STATUS.textContent =
+          "This page should only load after approving the Theme Switcher app in Webflow. Please return to the Webflow Apps directory to start the install.";
+      } else {
+        let message =
+          "Received redirect from Webflow. Authenticating with the Data Client to inject the Theme Switcher script via the Custom Code API.";
+        if (code) {
+          const redacted = `${code.slice(0, 4)}…${code.slice(-4)}`;
+          message += ` Authorization code ${redacted} captured.`;
+        }
+        if (siteId) {
+          message += ` Install requested for site ${siteId}.`;
+        }
+        if (state) {
+          message += ` State parameter ${state} recorded.`;
+        }
+        message +=
+          " We’ll add the hosted script tag to your site’s global footer automatically — you can close this tab and return to Webflow to finish setup.";
+        STATUS.textContent = message;
+      }
+    </script>
+  </body>
+</html>
